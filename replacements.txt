@@ -1,6 +1,17 @@
 -1,JoypadLowSensitivity EQU $3831
 5,	jr loc_daa7
-20,	db $f6,$f7,$f8,$f9,$fa,$fb,$fc,$fd,$fe,$ff
+20,	db $f6,$f7
+21,	db $f8,$f9
+22,	db $fa,$fb,$fc
+23,	db $fd
+24,	db $fe,$ff
+25,	db $60
+26,	db $61
+27,	db $62
+28,	db $63
+29,	db $64
+30,	db $65
+31,	db $66
 48,	jr nz, loc_dab2
 56,	call JoypadLowSensitivity
 62,	jr nz, loc_dadb
@@ -8,8 +19,4 @@
 155,	jp loc_daaa
 -2,loc_daa7,begin
 -2,loc_da80,entrypoint
--3,21
--3,22
--3,23
--3,24
--3,25
+-2,$db6a,loc_db6a
