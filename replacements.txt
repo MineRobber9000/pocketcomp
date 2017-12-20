@@ -1,0 +1,15 @@
+-1,JoypadLowSensitivity EQU $3831
+5,	jr loc_daa7
+20,	db $f6,$f7,$f8,$f9,$fa,$fb,$fc,$fd,$fe,$ff
+48,	jr nz, loc_dab2
+56,	call JoypadLowSensitivity
+62,	jr nz, loc_dadb
+68,	jr nz, loc_dae0
+155,	jp loc_daaa
+-2,loc_daa7,begin
+-2,loc_da80,entrypoint
+-3,21
+-3,22
+-3,23
+-3,24
+-3,25
